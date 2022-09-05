@@ -1,0 +1,19 @@
+.topSearch {
+  width: 750rpx;
+  height: 100px;
+  background-color: #c00000;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.topSearch .search_btn {
+  width: 400rpx;
+  height: 30px;
+  margin-top: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
