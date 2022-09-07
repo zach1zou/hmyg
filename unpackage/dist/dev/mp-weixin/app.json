@@ -5,14 +5,22 @@
     "pages/cate/cate",
     "pages/my/my"
   ],
-  "subPackages": [],
+  "subPackages": [
+    {
+      "root": "subpkg",
+      "pages": [
+        "goods_detail/goods_detail"
+      ]
+    }
+  ],
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "黑马优购",
-    "navigationBarBackgroundColor": "#C00000",
-    "backgroundColor": "#FFFFFF"
+    "navigationBarBackgroundColor": "#c00000",
+    "backgroundColor": "#F8F8F8"
   },
   "tabBar": {
+    "selectedColor": "#c00000",
     "list": [
       {
         "text": "首页",
