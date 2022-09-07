@@ -1,6 +1,6 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["subpkg/goods_detail/goods_detail"],{
 
-/***/ 44:
+/***/ 46:
 /*!************************************************************************************************!*\
   !*** C:/Users/86188/Desktop/简单项目/hmyg/main.js?{"page":"subpkg%2Fgoods_detail%2Fgoods_detail"} ***!
   \************************************************************************************************/
@@ -146,5 +146,5 @@ var _default =
 
 /***/ })
 
-},[[44,"common/runtime","common/vendor"]]]);
+},[[46,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/subpkg/goods_detail/goods_detail.js.map

@@ -32,13 +32,14 @@
         <!-- 楼层图片区域 -->
         <view class="floor-img-box">
           <!-- 左侧大图片的盒子 -->
-          <view class="left-img-box">
+          <view class="left-img-box" @click="goGoodList(item.navigator_url)">
             <image class="left-img" :src="item.product_list[0].image_src"
               :style="{width: item.product_list[0].image_width + 'rpx'}"></image>
           </view>
           <!-- 右侧 4 个小图片的盒子 -->
           <view class="right-img-box">
-            <view class="right-img-item" v-for="(item2, i2) in item.product_list" :key="i2" v-if="i2 !== 0">
+            <view class="right-img-item" v-for="(item2, i2) in item.product_list" :key="i2" v-if="i2 !== 0"
+              @click="goGoodList(item2.navigator_url)">
               <image :src="item2.image_src" mode="widthFix" :style="{width: item2.image_width + 'rpx'}"></image>
             </view>
           </view>
@@ -93,6 +94,11 @@
         const res = await getFloorList()
         this.floorList = res.message
         console.log(this.floorList, '图片列表');
+      },
+      goGoodList(url) {
+        uni.navigateTo({
+          url: '/subpkg/goods_list/goods_list?' + url.split('?')[1]
+        })
       }
     },
     onLoad() {
